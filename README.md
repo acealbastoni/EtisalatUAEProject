@@ -24,21 +24,19 @@ This is a simple Spring Boot application demonstrating the implementation of a R
 
 To run this application locally, follow these steps:
 
-1. Clone the repository:
-
-
+#1. Clone the repository:
 ```bash
    git clone https://github.com/acealbastoni/EtisalatUAEProject.git
 
-#1. Navigate to the project directory:
+#2. Navigate to the project directory:
    cd EtisalatUAEProject
 
-#2.Build the project using Maven:
+#3.Build the project using Maven:
     mvn clean install
 
-#3.Run the application:
+#4.Run the application:
     mvn spring-boot:run
-#4.Access the API endpoints at:
+#5.Access the API endpoints at:
         - http://localhost:8081/employees   and 
         - http://localhost:8081/departments
 
