@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.mohamedabdelhamid.demo.domains.Department;
+import com.mohamedabdelhamid.demo.dto.DepartmentDTO;
 import com.mohamedabdelhamid.demo.service.DepartmentService;
 
 @RestController
@@ -18,7 +19,7 @@ public class DepartmentController {
     private DepartmentService departmentService;
 
     @PostMapping
-    public Department createDepartment(@RequestBody Department department) {
+    public Department createDepartment(@RequestBody DepartmentDTO department) {
         return departmentService.save(department);
     }
 
