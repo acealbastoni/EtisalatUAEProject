@@ -25,7 +25,7 @@ This is a simple Spring Boot application demonstrating the implementation of a R
 To run this application locally, follow these steps:
 
 #1. Clone the repository:
-```bash
+#```bash
    git clone https://github.com/acealbastoni/EtisalatUAEProject.git
 
 #2. Navigate to the project directory:
@@ -40,4 +40,6 @@ To run this application locally, follow these steps:
         - http://localhost:8081/employees   and 
         - http://localhost:8081/departments
 
-
+## Configuration
+Database configurations can be adjusted in the application.properties file.
+Logging configurations can be adjusted in the logback.xml file.
