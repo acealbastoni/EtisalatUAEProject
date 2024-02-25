@@ -10,12 +10,14 @@ import org.springframework.stereotype.Component;
 public class LoggingAspect {
 	private Logger logger = LoggerFactory.getLogger(LoggingAspect.class);
 
-	@Before("execution(* com.example..*.controller.*.*(..))")
+
+	@Before("execution(* com.mohamedabdelhamid.demo.service.EmployeeService.*(..))")
 	public void logRequest() {
 		logger.info("Received a request");
 	}
 
-	@AfterReturning(pointcut = "execution(* com.example..*.controller.*.*(..))", returning = "result")
+	
+	 @AfterReturning(pointcut = "execution(* com.mohamedabdelhamid.demo.service.EmployeeService.*(..))", returning = "result")
 	public void logResponse(Object result) {
 		logger.info("Returning response: {}", result);
 	}
